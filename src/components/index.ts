@@ -1,0 +1,5 @@
+export { default as About } from "./About"
+export { default as Contact } from "./Contact"
+export { default as Work } from "./Work"
+export { default as Resume } from "./Resume"
+export { default as HomeTabs } from "./HomeTabs"
