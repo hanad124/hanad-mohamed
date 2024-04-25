@@ -2,52 +2,64 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // ** Components imports **
-import { About, Resume, Work, Contact } from "./index";
+import { About, Experience, Projects, Contact } from "./index";
+import { useTheme } from "@/components/theme-provide";
 
 //  ** React-icons imports **
-import { FaRegFileAlt, FaRegUser } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
+import { BsCodeSlash } from "react-icons/bs";
 import { MdOutlineContactSupport, MdOutlineWorkOutline } from "react-icons/md";
 const HomeTabs = () => {
+  const { theme } = useTheme();
+
   return (
-    <Tabs defaultValue="account" className="w-[400px] space-y-5">
-      <TabsList className="grid w-full  grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <TabsTrigger
-          value="About"
-          className="w-full flex flex-row justify-evenly items-center p-2"
-        >
-          <FaRegUser size={16} className="text-blue-800" />
-          <span>About</span>
-        </TabsTrigger>
-        <TabsTrigger
-          value="Resume"
-          className="w-full flex flex-row justify-evenly items-center p-2"
-        >
-          <FaRegFileAlt size={16} className="text-blue-800" />
-          <span>Resume</span>
-        </TabsTrigger>
-        <TabsTrigger
-          value="Work"
-          className="w-full flex flex-row justify-evenly items-center p-2"
-        >
-          <MdOutlineWorkOutline size={18} className="text-blue-800" />
-          <span>Work</span>
-        </TabsTrigger>
-        <TabsTrigger
-          value="Contact"
-          className="w-full flex flex-row justify-evenly items-center p-2"
-        >
-          <MdOutlineContactSupport size={18} className="text-blue-800" />
-          <span>Contact</span>
-        </TabsTrigger>
-      </TabsList>
-      <TabsContent value="About">
+    <Tabs defaultValue="About" className="w-full space-y-5 my-[1rem]">
+      <div className="">
+        <div className="flex justify-end">
+          <TabsList
+            className={`${
+              theme === "light" ? "bg-[#f9f9f9]" : "bg-[#000000]"
+            }  w-full md:w-[76%] gap-4 min-h-[8rem] flex flex-row px-10 rounded-[1rem] dark:border dark:border-[#a6a6a651] shadow-none`}
+          >
+            <TabsTrigger
+              value="About"
+              className="w-full flex flex-col gap-y-2 justify-evenly items-center p-2 py-4 rounded-lg"
+            >
+              <FaRegUser size={16} className=" w-6 h-6" />
+              <span>About</span>
+            </TabsTrigger>
+            <TabsTrigger
+              value="experience"
+              className="w-full flex flex-col gap-y-2 justify-evenly items-center p-2 py-4 rounded-lg"
+            >
+              <MdOutlineWorkOutline size={16} className=" w-6 h-6" />
+              <span>Experience</span>
+            </TabsTrigger>
+            <TabsTrigger
+              value="projects"
+              className="w-full flex flex-col gap-y-2 justify-evenly items-center p-2 py-4 rounded-lg"
+            >
+              <BsCodeSlash size={18} className=" w-6 h-6" />
+              <span>Projects</span>
+            </TabsTrigger>
+            <TabsTrigger
+              value="Contact"
+              className="w-full flex flex-col gap-y-2 justify-evenly items-center p-2 py-4 rounded-lg"
+            >
+              <MdOutlineContactSupport size={18} className=" w-6 h-6" />
+              <span>Contact</span>
+            </TabsTrigger>
+          </TabsList>
+        </div>
+      </div>
+      <TabsContent value="About" className="border-none rounded-[1rem] ">
         <About />
       </TabsContent>
-      <TabsContent value="Resume">
-        <Resume />
+      <TabsContent value="experience">
+        <Experience />
       </TabsContent>
-      <TabsContent value="Work">
-        <Work />
+      <TabsContent value="projects">
+        <Projects />
       </TabsContent>
       <TabsContent value="Contact">
         <Contact />
