@@ -4,6 +4,8 @@ import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provide";
+import {Helmet} from "react-helmet";
+
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

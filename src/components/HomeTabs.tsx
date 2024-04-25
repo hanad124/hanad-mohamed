@@ -19,35 +19,35 @@ const HomeTabs = () => {
           <TabsList
             className={`${
               theme === "light" ? "bg-[#f9f9f9]" : "bg-[#000000]"
-            }  w-full md:w-[76%] gap-4 min-h-[6rem] flex flex-row px-10 rounded-[1rem] dark:border dark:border-[#f6f1f120] shadow-none`}
+            }  w-full md:w-[76%]  gap-2 md:gap-4 min-h-[6rem] flex flex-row px-10 rounded-[1rem] dark:border dark:border-[#f6f1f120] shadow-none`}
           >
             <TabsTrigger
               value="About"
               className="w-full flex gap-3 items-center px-2 py-4 rounded-lg"
             >
-              <FaRegUser size={16} className=" w-4 h-4" />
+              <FaRegUser size={16} className=" md:w-4 md:h-4" />
               <span>About</span>
             </TabsTrigger>
             <TabsTrigger
               value="experience"
               className="w-full flex gap-3 items-center px-2 py-4 rounded-lg"
             >
-              <MdOutlineWorkOutline size={16} className=" w-6 h-6" />
+              <MdOutlineWorkOutline size={16} className=" md:w-6 md:h-6" />
               <span>Experience</span>
             </TabsTrigger>
             <TabsTrigger
               value="projects"
-              className="w-full flex gap-3 items-center px-2 py-4 rounded-lg"
+              className="w-full flex gap-2 items-center px-2 py-4 rounded-lg"
             >
-              <BsCodeSlash size={18} className=" w-6 h-6" />
-              <span>Projects</span>
+              <BsCodeSlash size={18} className=" md:w-6 md:h-6" />
+              <span className="text-xs">Projects</span>
             </TabsTrigger>
             <TabsTrigger
               value="Contact"
-              className="w-full flex gap-3 items-center px-2 py-4 rounded-lg"
+              className="w-full flex gap-2 items-center px-2 py-4 rounded-lg"
             >
-              <MdOutlineContactSupport size={18} className=" w-6 h-6" />
-              <span>Contact</span>
+              <MdOutlineContactSupport size={18} className=" md:w-6 md:h-6" />
+              <span className="text-xs">Contact</span>
             </TabsTrigger>
           </TabsList>
         </div>

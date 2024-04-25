@@ -15,20 +15,22 @@ const Experience = () => {
     <Card>
       <CardHeader className="px-10">
         <CardTitle className="flex items-center gap-8">
-          <span className="font-bold text-3xl  ">Work Experience</span>
+          <span className="font-bold text-xl md:text-3xl  ">
+            Work Experience
+          </span>
           <div className="bg-blue-600 w-[4rem] md:w-[14rem] rounded-full py-[2px]"></div>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-2 px-10">
         <div className="">
-          <div className="flex justify-between items-center">
-            <p className="text-lg">Mentor/Assistant</p>
-            <p className="font-medium text-lg">
+          <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
+            <p className=" text-lg">Mentor/Assistant</p>
+            <p className="font-medium  text-lg">
               <Link to="https://www.dugsiiye.so/" target="_blank">
                 Dugsiiye Platform
               </Link>
             </p>
-            <p className="text-lg">Feb, 2024 - Current</p>
+            <p className=" text-lg">Feb, 2024 - Current</p>
           </div>
           <p className="mt-5 font-light leading-7">
             As a mentor and guide at the Dugsiiye platform, I have the privilege
@@ -42,7 +44,7 @@ const Experience = () => {
           </p>
         </div>
         <div className="pt-7">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row  justify-start md:justify-between items-start md:items-center">
             <p className="text-lg">MERN Stack Developer</p>
             <p className="font-medium text-lg">Freelance</p>
             <p className="text-lg">Apr, 2023 - Current</p>
