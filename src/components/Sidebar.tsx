@@ -13,7 +13,7 @@ import {
 const Sidebar = () => {
   return (
     <div className="relative flex gap-5">
-      <div className="sticky top-0 left-0 bg-white dark:bg-[#000000]  dark:border dark:border-[#a6a6a651] w-full md:w-fit h-fit rounded-[1rem] overflow-hidden p-4 mb-10">
+      <div className="sticky top-0 left-0 bg-white dark:bg-[#000000]  dark:border dark:border-[#f6f1f120] w-full md:w-fit h-fit rounded-[1rem] overflow-hidden p-4 mb-10">
         <div className="w-full md:w-[14rem] md:max-w-[27rem] h-[15rem] mx-auto mt-5">
           <img
             src={hanad}
