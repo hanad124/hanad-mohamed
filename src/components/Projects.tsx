@@ -15,13 +15,13 @@ const Projects = () => {
       </CardHeader>
       <CardContent className="space-y-2 px-10">
         <div className="">
-          <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
+          <div className="flex flex-col gap-x-10 md:flex-row justify-start md:justify-between items-start md:items-center">
             <p className=" text-xl font-semibold">Furqan Constructions</p>
             <Link
               to="https://github.com/hanad124/furqan-constructions"
               target="_blank"
             >
-              <div className="flex justify-center items-center px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
+              <div className="flex justify-center items-center mt-3 md:mt-0 px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
                 <span>Check it out</span>
                 <FiGithub className="ml-2" />
               </div>
@@ -44,7 +44,7 @@ const Projects = () => {
               to="https://github.com/hanad124/reactjs-petrol-system"
               target="_blank"
             >
-              <div className="flex justify-center items-center px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
+              <div className="flex justify-center items-center  mt-3 md:mt-0  px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
                 <span>Check it out</span>
                 <FiGithub className="ml-2" />
               </div>
@@ -64,7 +64,7 @@ const Projects = () => {
           <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
             <p className=" text-xl font-semibold">InvoiceFy</p>
             <Link to="https://github.com/hanad124/invoicefy" target="_blank">
-              <div className="flex justify-center items-center px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
+              <div className="flex justify-center items-center mt-3 md:mt-0 px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
                 <span>Check it out</span>
                 <FiGithub className="ml-2" />
               </div>
@@ -88,7 +88,7 @@ const Projects = () => {
               to="https://github.com/hanad124/tiktok-video-downloader"
               target="_blank"
             >
-              <div className="flex justify-center items-center px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
+              <div className="flex justify-center items-center mt-3 md:mt-0 px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
                 <span>Check it out</span>
                 <FiGithub className="ml-2" />
               </div>
