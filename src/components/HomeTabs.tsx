@@ -23,7 +23,7 @@ const HomeTabs = () => {
           >
             <TabsTrigger
               value="About"
-              className="w-full flex gap-3 items-center px-2 py-4 rounded-lg text-white"
+              className="w-full flex gap-3 items-center px-2 py-4 rounded-lg "
             >
               <FaRegUser size={16} className=" md:w-4 md:h-4" />
               <span>About</span>

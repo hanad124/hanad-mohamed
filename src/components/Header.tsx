@@ -22,7 +22,7 @@ const Header = () => {
         <DropdownMenuTrigger asChild>
           <Button
             variant={"default"}
-            className="rounded-md border-non bg-white border shadow-none dark:bg-slate-200"
+            className="rounded-md border-non text-black bg-white border shadow-none dark:bg-slate-200"
             size="icon"
           >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
