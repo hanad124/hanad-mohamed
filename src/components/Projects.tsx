@@ -39,6 +39,27 @@ const Projects = () => {
         </div>
         <div className="pt-5">
           <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
+            <p className=" text-xl font-semibold">InvoiceFy</p>
+            <Link to="https://github.com/hanad124/invoicefy" target="_blank">
+              <div className="flex justify-center items-center mt-3 md:mt-0 px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
+                <span>Check it out</span>
+                <FiGithub className="ml-2" />
+              </div>
+            </Link>
+          </div>
+          <p className="mt-5 font-light leading-7">
+            Invoicefy is a web-based application that allows users to create and
+            download invoices in PDF format. Users can also view all invoices,
+            track the status of invoices, and manage their profile and settings.
+            The application is built using React,Typescript, Node.js, Express,
+            and MongoDB. The frontend is built using React and Zustand for state
+            management, while the backend is built using Node.js and Express.
+            MongoDB is used as the database, and Firebase is used for image
+            storage. The application also uses shadcn ui for the design.
+          </p>
+        </div>
+        <div className="pt-5">
+          <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
             <p className=" text-xl font-semibold">Petrol Management System</p>
             <Link
               to="https://github.com/hanad124/reactjs-petrol-system"
@@ -60,27 +81,7 @@ const Projects = () => {
             material-ui.
           </p>
         </div>
-        <div className="pt-5">
-          <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
-            <p className=" text-xl font-semibold">InvoiceFy</p>
-            <Link to="https://github.com/hanad124/invoicefy" target="_blank">
-              <div className="flex justify-center items-center mt-3 md:mt-0 px-4 py-2 rounded-md cursor-pointer bg-[#f3f6f6] dark:bg-[#2a2a2a]">
-                <span>Check it out</span>
-                <FiGithub className="ml-2" />
-              </div>
-            </Link>
-          </div>
-          <p className="mt-5 font-light leading-7">
-            Invoicefy is a web-based application that allows users to create and
-            download invoices in PDF format. Users can also view all invoices,
-            track the status of invoices, and manage their profile and settings.
-            The application is built using React,Typescript, Node.js, Express,
-            and MongoDB. The frontend is built using React and Zustand for state
-            management, while the backend is built using Node.js and Express.
-            MongoDB is used as the database, and Firebase is used for image
-            storage. The application also uses shadcn ui for the design.
-          </p>
-        </div>
+
         <div className="pt-5">
           <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center">
             <p className=" text-xl font-semibold">Tik-Tok Video Downloader </p>
