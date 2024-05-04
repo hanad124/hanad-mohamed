@@ -13,7 +13,7 @@ import {
 const Sidebar = () => {
   return (
     <div className="relative flex gap-5">
-      <div className="sticky top-0 left-0 bg-white dark:bg-[#000000]  dark:border dark:border-[#f6f1f120] w-full md:w-fit h-fit rounded-[1rem] overflow-hidden p-4 mb-10">
+      <div className="sticky top-0 left-0 bg-white border border-slate-100/80 dark:bg-background  dark:border dark:border-[#f6f1f120] w-full md:w-fit h-fit rounded-[1rem] overflow-hidden p-4 mb-10">
         <div className="w-full md:w-[14rem] md:max-w-[27rem] h-[15rem] mx-auto mt-5">
           <img
             src={hanad}
@@ -25,28 +25,28 @@ const Sidebar = () => {
           Hanad Mohamed
         </h1>
         <div className="mt-2 flex justify-center ">
-          <span className="text-sm bg-[#f3f6f6] dark:bg-[#2a2a2a]  rounded-md py-2 px-4 text-slate-600 dark:text-white font-mono font-medium">
+          <span className="text-sm bg-[#f3f6f6] dark:bg-background border dark:border-slate-600/50  rounded-md py-2 px-4 text-slate-600 dark:text-white font-mono font-medium">
             MERN stack Dev
           </span>
         </div>
         <div className="flex justify-center items-center gap-3 mt-5">
           <Link to="https://github.com/hanad124" target="_blank">
-            <div className="bg-[#f3f6f6] dark:bg-[#2a2a2a] rounded-md p-3 cursor-pointer">
+            <div className="bg-[#f3f6f6] dark:bg-background border dark:border-slate-600/50 rounded-md p-3 cursor-pointer">
               <FiGithub className="text-slate-700 dark:text-white" />
             </div>
           </Link>
           <Link to="https://www.facebook.com/hanad.faaruuq" target="_blank">
-            <div className="bg-[#f3f6f6] dark:bg-[#2a2a2a] rounded-md p-3 cursor-pointer">
+            <div className="bg-[#f3f6f6] dark:bg-background border dark:border-slate-600/50 rounded-md p-3 cursor-pointer">
               <FiFacebook className="text-blue-600" />
             </div>
           </Link>
           <Link to="#" target="_blank">
-            <div className="bg-[#f3f6f6] dark:bg-[#2a2a2a] rounded-md p-3 cursor-pointer">
+            <div className="bg-[#f3f6f6] dark:bg-background border dark:border-slate-600/50 rounded-md p-3 cursor-pointer">
               <FiTwitter className="text-blue-400" />
             </div>
           </Link>
         </div>
-        <div className="w-full bg-[#f3f6f6] dark:bg-[#1d1d1d] min-w-[20rem] mt-8 py-10 px-2 rounded-[1rem]">
+        <div className="w-full bg-[#f3f6f6] dark:bg-background border dark:border-slate-600/50  min-w-[20rem] mt-8 py-10 px-2 rounded-[1rem]">
           <div className="flex items-center gap-2 border-b border-[#a6a6a654] pb-3">
             <div className="bg-[#fff] dark:bg-[#000000] shadow dark:shadow-none p-2 rounded-lg">
               <FiSmartphone className="text-red-400 w-5 h-5" />

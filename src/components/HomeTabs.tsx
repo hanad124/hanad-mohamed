@@ -17,9 +17,7 @@ const HomeTabs = () => {
       <div className="">
         <div className="flex justify-end">
           <TabsList
-            className={`${
-              theme === "light" ? "bg-[#f9f9f9]" : "bg-[#000000]"
-            }  w-full md:w-[76%]  gap-2 md:gap-4 min-h-[6rem] flex flex-row px-10 rounded-[1rem] dark:border dark:border-[#f6f1f120] shadow-none`}
+            className={`bg-background w-full md:w-[76%]  gap-2 md:gap-4 min-h-[6rem] flex flex-row px-10 rounded-[1rem]  border border-slate-100/80 dark:border dark:border-[#f6f1f120] shadow-none`}
           >
             <TabsTrigger
               value="About"
