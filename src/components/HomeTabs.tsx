@@ -10,8 +10,6 @@ import { FaRegUser } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
 import { MdOutlineContactSupport, MdOutlineWorkOutline } from "react-icons/md";
 const HomeTabs = () => {
-  const { theme } = useTheme();
-
   return (
     <Tabs defaultValue="About" className="w-full space-y-5 mb-[1rem]">
       <div className="">
