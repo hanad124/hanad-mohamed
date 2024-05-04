@@ -3,7 +3,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // ** Components imports **
 import { About, Experience, Projects, Contact } from "./index";
-import { useTheme } from "@/components/theme-provide";
 
 //  ** React-icons imports **
 import { FaRegUser } from "react-icons/fa";
